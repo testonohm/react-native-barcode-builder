@@ -65,12 +65,22 @@ const Barcode = props => {
     return `M${x},${y}h${width}v${height}h-${width}z`;
   };
 
+  const getTotalWidthOfEncodings = encodings => {
+    let totalWidth = 0;
+    for (let i = 0; i < encodings.length; i++) {
+      totalWidth += encodings[i].width;
+    }
+    return totalWidth;
+  };
+
   // encode() handles the Encoder call and builds the binary string to be rendered
   const encode = (text, Encoder, options) => {
     // If text is not a non-empty string, throw error.
     if (typeof text !== 'string' || text.length === 0) {
       if (props.onError) {
-        props.onError(new Error('Barcode value must be a non-empty string'));
+        props.onError(
+          new Error('Barcode value must be a non-empty string'),
+        );
         return;
       }
       throw new Error('Barcode value must be a non-empty string');
@@ -112,7 +122,11 @@ const Barcode = props => {
   };
   return (
     <View style={[styles.svgContainer, backgroundStyle]}>
-      <Svg height={props.height} width={barCodeWidth} fill={props.lineColor}>
+      <Svg
+        height={props.height}
+        width={barCodeWidth}
+        fill={props.lineColor}
+      >
         <Path d={bars.join(' ')} />
       </Svg>
       {typeof props.text != 'undefined' && (
