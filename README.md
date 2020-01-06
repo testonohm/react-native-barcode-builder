@@ -9,7 +9,7 @@ React Native component to generate barcodes. Uses [JsBarcode](https://github.com
 
 Install `react-native-barcode-expo`:
 
-    yarn add react-native-barcode-expo --save
+    yarn add react-native-barcode-expo
 
 
 #### Step 2
