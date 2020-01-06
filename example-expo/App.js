@@ -7,7 +7,7 @@
 import React, { useState } from 'react';
 import { AppRegistry, StyleSheet, Text, View, Button } from 'react-native';
 
-import Barcode from './barcode';
+import Barcode from 'react-native-barcode-expo';
 
 const Example = () => {
   const [code, setCode] = useState('Hello');
@@ -16,7 +16,7 @@ const Example = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.welcome}>React Native Barcode Builder</Text>
-      <Barcode value={code} />
+      <Barcode value={code} text={code} />
       <Button title="Press me" onPress={() => setCode('dondon')} />
     </View>
   );

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import PropTypes from 'prop-types';
-
 import barcodes from 'jsbarcode/src/barcodes';
-
 import Svg, { Path } from 'react-native-svg';
+
+import ErrorBoundary from './ErrorBoundary';
 
 const Barcode = props => {
   const [bars, setBars] = useState([]);
@@ -111,22 +111,24 @@ const Barcode = props => {
     backgroundColor: props.background,
   };
   return (
-    <View style={[styles.svgContainer, backgroundStyle]}>
-      <Svg height={props.height} width={barCodeWidth} fill={props.lineColor}>
-        <Path d={bars.join(' ')} />
-      </Svg>
-      {typeof props.text != 'undefined' && (
-        <Text
-          style={{
-            color: props.textColor,
-            width: barCodeWidth,
-            textAlign: 'center',
-          }}
-        >
-          {props.text}
-        </Text>
-      )}
-    </View>
+    <ErrorBoundary>
+      <View style={[styles.svgContainer, backgroundStyle]}>
+        <Svg height={props.height} width={barCodeWidth} fill={props.lineColor}>
+          <Path d={bars.join(' ')} />
+        </Svg>
+        {typeof props.text !== 'undefined' && (
+          <Text
+            style={{
+              color: props.textColor,
+              width: barCodeWidth,
+              textAlign: 'center',
+            }}
+          >
+            {props.text}
+          </Text>
+        )}
+      </View>
+    </ErrorBoundary>
   );
 };
 

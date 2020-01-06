@@ -1,28 +1,28 @@
 {
-  "name": "react-native-barcode-builder",
-  "version": "1.0.5",
+  "name": "react-native-barcode-expo",
+  "version": "1.0.0",
   "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wonsikin/react-native-barcode-builder.git"
+    "url": "https://github.com/pthongtaem/react-native-barcode-builder"
   },
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./"
   },
-  "keywords": ["react-native", "barcode"],
-  "author": "WonSikin <fnghwsj@gmail.com>",
+  "keywords": ["react-native", "expo", "barcode"],
+  "author": "Pol Thongtaem <pthongtaem@hotmail.com>",
   "dependencies": {
-    "jsbarcode": "^3.8.0",
-    "react-native-svg": "^9.13.3"
+    "jsbarcode": "^3.11.0",
+    "react-native-svg": "9.13.3"
   },
   "peerDependencies": {
-    "prop-types": "^15.5.0"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "babel-eslint": "^6.1.2",
-    "eslint": "^2.13.1",
-    "eslint-plugin-react": "^6.8.0"
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.17.0"
   }
 }
