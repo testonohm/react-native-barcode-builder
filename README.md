@@ -1,5 +1,5 @@
 
-# react-native-barcode-builder
+# react-native-barcode-builder-expo
 
 React Native component to generate barcodes. Uses [JsBarcode](https://github.com/lindell/JsBarcode) for encoding of data.
 
@@ -54,8 +54,12 @@ You can find more info about the supported barcodes in the [JsBarcode README](ht
     <td>Override text that is displayed.</td>
   </tr>
   <tr>
+    <td><code>textColor</code></td>
+    <td>Color of the text (default: #000000)</td>
+  </tr>
+  <tr>
     <td><code>lineColor</code></td>
-    <td>Color of the bars and text (default: #000000)</td>
+    <td>Color of the bars (default: #000000)</td>
   </tr>
   <tr>
     <td><code>background</code></td>
