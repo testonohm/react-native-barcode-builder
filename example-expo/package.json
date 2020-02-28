@@ -14,9 +14,9 @@
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
+    "react-native-barcode-expo": "file:../dist/",
     "react-native-svg": "9.13.3",
-    "react-native-web": "~0.11.7",
-    "react-native-barcode-expo": "file:../"
+    "react-native-web": "~0.11.7"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

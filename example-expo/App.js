@@ -17,7 +17,7 @@ const Example = () => {
     <View style={styles.container}>
       <Text style={styles.welcome}>React Native Barcode Builder</Text>
       <Barcode value={code} text={code} />
-      <Button title="Press me" onPress={() => setCode('dondon')} />
+      <Button title="Press me" onPress={() => setCode('World')} />
     </View>
   );
 };

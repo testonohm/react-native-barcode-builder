@@ -1,1 +1,12 @@
-node_modules/
+node_modules
+.DS_Store
+*.log
+.rpt2_cache
+.rts2_cache_cjs
+.rts2_cache_es
+.rts2_cache_umd
+yarn.lock
+.vscode
+.idea
+.rts2*
+sizes.csv
