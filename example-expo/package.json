@@ -9,19 +9,19 @@
     "test": "jest"
   },
   "dependencies": {
-    "expo": "~36.0.0",
+    "expo": "^46.0.0",
     "jsbarcode": "^3.11.0",
-    "react": "~16.9.0",
-    "react-dom": "~16.9.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-native": "0.69.5",
     "react-native-barcode-expo": "file:../dist/",
-    "react-native-svg": "9.13.3",
-    "react-native-web": "~0.11.7"
+    "react-native-svg": "12.3.0",
+    "react-native-web": "~0.18.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "babel-preset-expo": "~8.0.0",
-    "jest-expo": "^36.0.1",
+    "@babel/core": "^7.18.6",
+    "babel-preset-expo": "~9.2.0",
+    "jest-expo": "^46.0.0",
     "react-test-renderer": "^16.12.0"
   },
   "private": true,
